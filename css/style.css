@@ -40,7 +40,7 @@ body {
 
 .header {
   background-color: #0db14b;
-  height: 90vh;
+  height: 560px;
   background-size: cover;
   background-image: url("../images/Group-2255.png");
   background-position: center; }
@@ -191,16 +191,19 @@ body {
 .live-show {
   padding-top: 20px;
   background-color: #5dcc64;
-  background-image: url("../images/show2.png");
-  height: 95vh;
+  height: 600px;
   z-index: 1;
   background-size: 140%;
   background-position: center;
   position: relative; }
-  .live-show .live {
-    display: block;
-    width: 60%;
-    margin: auto; }
+  .live-show .phone {
+    width: 20% !important; }
+  .live-show .phone1 {
+    position: absolute;
+    right: 20%; }
+  .live-show .phone2 {
+    position: absolute;
+    left: 20%; }
   .live-show .content {
     margin-top: -10px; }
     .live-show .content h5 {
@@ -366,12 +369,15 @@ footer {
 
 @media (min-width: 2560px) {
   .header {
+    height: 880px !important;
     background-repeat: no-repeat;
     background-position: bottom; }
     .header .header-content {
       font-size: 23px;
       top: 10%;
       width: 100% !important; }
+    .header img {
+      top: 14%; }
 
   .the-best {
     height: 53vh;
@@ -383,18 +389,21 @@ footer {
   .cota {
     margin-top: 371px; }
 
-  .live-show {
-    height: 59vh; }
-    .live-show .side {
-      left: 45%; }
-      .live-show .side span {
-        font-size: 42px; }
+  .live-show .side {
+    left: 45%; }
+    .live-show .side span {
+      font-size: 42px; }
 
   footer {
     margin-top: 539px; } }
+@media (min-width: 1440px) {
+  .header {
+    height: 657px; }
+
+  .live-show {
+    height: 65vh !important; } }
 @media (max-width: 1024px) {
   .header {
-    height: 46vh;
     background-size: 105%;
     background-repeat: no-repeat;
     background-position: bottom; }
@@ -403,18 +412,21 @@ footer {
       top: 15%;
       width: 100% !important; }
     .header img {
-      top: 30%; }
+      top: 20%; }
 
   .the-best {
     height: auto; }
 
   .live-show {
-    height: 30vh; }
+    height: 46px; }
     .live-show .content h5 {
       font-size: 56px; }
     .live-show .side span {
       font-size: 10px; } }
 @media (max-width: 800px) {
+  .header {
+    height: 200px; }
+
   .the-best {
     background-image: none; }
 
@@ -432,6 +444,9 @@ footer {
   .cota .columns {
     margin-top: 15px; }
 
+  .live-show {
+    height: 300px; }
+
   footer .social {
     float: right;
     margin-top: 10px; }
@@ -444,6 +459,8 @@ footer {
   .header .header-content {
     top: 19%;
     font-size: 15px; }
+  .header img {
+    top: 30%; }
 
   .the-best {
     background-image: none; }
@@ -472,13 +489,15 @@ footer {
   .live-show {
     background-image: none;
     position: relative;
-    height: auto; }
+    height: 207px !important; }
     .live-show .content h5 {
       font-size: 30px; }
     .live-show .side {
       position: absolute;
       bottom: 30%;
       left: 38%; }
+      .live-show .side span {
+        font-size: 12px; }
     .live-show .live {
       display: block;
       width: 100%; }

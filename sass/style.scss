@@ -59,7 +59,7 @@ body {
 // start header
 .header {
   background-color: #0db14b;
-  height: 90vh;
+  height: 560px;
   background-size: cover;
   background-image: url("../images/Group-2255.png");
   background-position: center;
@@ -258,16 +258,22 @@ body {
 .live-show {
   padding-top: 20px;
   background-color: $mainColor;
-  background-image: url("../images/show2.png");
-  height: 95vh;
+  // background-image: url("../images/show2.png");
+  height: 600px;
   z-index: 1;
   background-size: 140%;
   background-position: center;
   position: relative;
-  .live {
-    display: block;
-    width: 60%;
-    margin: auto;
+  .phone{
+    width: 20% !important;
+  }
+  .phone1{
+    position: absolute;
+    right: 20%;
+  }
+  .phone2{
+    position: absolute;
+    left: 20%;
   }
   .content {
     margin-top: -10px;
@@ -488,7 +494,7 @@ footer {
 
 @media (min-width: 2560px) {
   .header {
-    // height: 66vh;
+    height: 880px !important;
     // background-size: 105%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -496,6 +502,9 @@ footer {
       font-size: 23px;
       top: 10%;
       width: 100% !important;
+    }
+    img{
+      top: 14%;
     }
   }
   .the-best {
@@ -511,7 +520,7 @@ footer {
     margin-top: 371px;
   }
   .live-show {
-    height: 59vh;
+    // height: 65vh;
     .side {
       left: 45%;
       span {
@@ -524,9 +533,18 @@ footer {
   }
 }
 
+@media(min-width: 1440px){
+  .header{
+    height: 657px;
+  }
+  .live-show{
+    height: 65vh !important;
+  }
+}
+
 @media (max-width: 1024px) {
   .header {
-    height: 46vh;
+    // height: 46vh;
     background-size: 105%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -536,14 +554,14 @@ footer {
       width: 100% !important;
     }
     img {
-      top: 30%;
+      top: 20%;
     }
   }
   .the-best {
     height: auto;
   }
   .live-show {
-    height: 30vh;
+    height: 46px;
     .content h5 {
       font-size: 56px;
     }
@@ -556,6 +574,9 @@ footer {
 }
 
 @media (max-width: 800px) {
+  .header{
+    height: 200px;
+  }
   .the-best {
     // height: auto;
     background-image: none;
@@ -582,6 +603,9 @@ footer {
       margin-top: 15px;
     }
   }
+  .live-show{
+    height: 300px;
+  }
   footer {
     .social {
       float: right;
@@ -601,6 +625,9 @@ footer {
     .header-content {
       top: 19%;
       font-size: 15px;
+    }
+    img{
+      top: 30%;
     }
   }
   .the-best {
@@ -643,7 +670,7 @@ footer {
   .live-show {
     background-image: none;
     position: relative;
-    height: auto;
+    height: 207px !important;
     .content {
       h5 {
         font-size: 30px;
@@ -653,6 +680,9 @@ footer {
       position: absolute;
       bottom: 30%;
       left: 38%;
+      span{
+        font-size: 12px;
+      }
     }
     .live {
       display: block;
